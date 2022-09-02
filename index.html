@@ -1,0 +1,249 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>ROSTOV - AIR|Покупка билетов</title>
+
+
+</head>
+<body>
+<header class="header">
+<table class="logo">
+	<tr>
+		<td>
+<image src="images/307246.svg" class="img">
+</td>
+<td>
+<p>ROSTOV-AIR</p></span>
+</td>
+</tr>
+</table>
+
+<!--<div class="navigation">
+<nav>
+	<table class="t1">
+	<tr>
+	<td><a href="result_search.html" target="blank">Поиск</a></td>
+	<td><a href="#">Акции</a></td>
+	<td><a href="#">Регистрация на рейс</a></td>
+	<td><a href="#">Личный кабинет</a></td>
+	</tr>
+	</table>
+	</nav>
+
+</div>-->
+
+
+<!--Здесь пытаюсь в меню гамбургер-->
+<!--Вот прямо тут начинаю-->
+<nav role='navigation'>
+  <div id="menuToggle">
+    
+    <input type="checkbox" />
+    
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+   
+    <ul id="menu">
+      <a href="#promotions"><li>Акции</li></a>
+      <a href="result_search.html" target="blank"><li>Поиск</li></a>
+      <a href="#"><li>Регистрация на рейс</li></a>
+    </ul>
+  </div>
+  <table>
+  	<tr>
+  		<td>
+  <input type="email" placeholder="Ваш логин" class="email"></td>
+<td>
+ <input type="password" placeholder="Ваш пароль" class="password" maxlength="8"></td>
+</tr>
+<tr>
+	<td><input type="button" value="Войти" class="email1"></td>
+	<td><input type="button" value="Регистрация" class="password1"></td>
+	</tr>
+</table>
+
+</nav>
+<!--А вот тут заканчиваю-->
+
+</header>
+
+<main class="main">
+<div class="pol">
+<p class="pol1">Путешествие начинается здесь</p>
+<div class="poloska">
+
+<div class="inputs">
+<table class="inputs1">
+<tr>
+	<td>
+	<figcaption>Откуда</figcaption>
+		<input type ="text" placeholder="Место вылета" title="Введите место отправления" value="Краснодар">
+	</td>
+	<td>
+	<figcaption>Куда</figcaption>
+		<input type ="text" placeholder="Место прибытия" title="Введите место прибытия" value="Москва">
+	</td>
+	<td>
+	<figcaption>Туда</figcaption>
+		<input type ="date" value="2022-06-03">
+	</td>
+	<td>
+	<figcaption>Обратно</figcaption>
+		<input type ="date" value="2022-06-15">
+	</td>
+	<td>
+	<figcaption>Пассажиры</figcaption>
+	<select class="people">
+			<option selected value="s1">1</option>
+			<option value="s2">2</option>
+			<option value="s3">3</option>
+			<option value="s4">4</option>
+			<option value="s5">5</option>
+			<option value="s6">6</option>
+			<option value="s7">7</option>
+			<option value="s8">8</option>
+	</select>
+	</td>
+	<td>
+	<figcaption>Класс обслуживания</figcaption>
+		<select> 
+			<option selected value="s1">Эконом</option>
+			<option value="s2">Бизнес-класс</option>
+			<option value="s3">Первый класс</option>
+		</select>
+	</td>
+</tr>
+</table>
+<table class="radio1">
+<tr>
+<td>
+<input type = "radio" class="radio"> Рейсы без пересадок
+</td>
+</tr>
+<tr>
+<td>
+<input type = "radio" class="radio"> В одну сторону
+</td>
+</tr>
+<tr>
+<td>
+<input type = "radio" class="radio" > Сложный маршрут
+</td>
+</tr>
+</table>
+
+<a href="result_search.html" target="blank"><button title="Показать результаты" class="button1">Найти билеты</button></a>
+</div>
+</div>
+</div>
+</main>
+
+
+<!--Начало плашки "почему выбирают именно нас?"-->
+<div class="square_b">
+		<h2>Почему выбирают именно нас?</h2>
+		<!--Иконки собранные в таблице-->
+<table>
+	<tr>
+	<td>
+
+		<span><img id="img" src="notlike.png" alt=""></span>
+		<!-- class="ikonlike likeanimate"></span>--><p class="p_text">Мы станем вашей любимой командой. Вам больше не захочется летать без нас!</p></td>
+	<td><span class="icon2"></span><p class="p_text">Быстро и оперативно подберем вам билеты на лучшие рейсы!</p></td>
+	<td><span class="icon1"></span><p class="p_text">Запланируйте себе отпуск, а мы обеспечим Вам комфортный перелет.</span></p></td>
+	<td><!--<span class="ikonlamp lampanimate"></span>-->
+		<span><img id="imglamp" src="notlamp.png" alt=""></span>
+		<p class="p_text">У нас есть услуга предварительного выбора места в самолете и его бронирования.</p></td>
+</tr>
+</table>
+</div>
+
+<!--Конец плашки-->
+<!--Делаю плашки акций-->
+	<h2 id="promotions">Акции: </h2>
+	<table>
+		<tr>
+			<td>
+				<section class="section_promo section_promo_animate">
+					<figcaption class="actions_name">Returning and Changing Your Tickets</figcaption>
+					<img src="images/promotions/promotion1.jpg" class="promotion_image" alt="promo1">
+					<p class="promotion_p">The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+Once all of this is over, we will continue exploring this world the way we used to. 
+Special rules that have been developed for this challenging situation will help you cancel your trip
+or postpone it until later.</p>
+<a href="#"><input type="button" class="promotion_button" value="Посмотреть"></a>
+				</section>
+			</td>
+
+			<td>
+				<section  class="section_promo1 section_promo1_animate">
+			<figcaption class="actions_name">Best offers</figcaption>
+			<img src="images/promotions/promotion2.jpg" class="promotion_image" alt="promo2">
+			<p class="promotion_p">To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+what you’ve come through. And to think of new dreams that will be so special!
+</p>
+<input type="button" value="Посмотреть" class="promotion_button">
+		</section>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<section  class="section_promo section_promo_animate">
+			<figcaption class="actions_name">See you more often</figcaption>
+			<img src="images/promotions/promotion3.jpg" class="promotion_image" alt="promo3">
+			<p class="promotion_p">Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+see your loved ones more often. Choose our company to fly to where you are always expected.</p>
+			
+			<input type="button" value="Посмотреть" class="promotion_button">
+		</section>
+			</td>
+
+			<td>
+				<section class="section_promo1 section_promo1_animate">
+			<figcaption class="actions_name">Everything is on again</figcaption>
+			<img src="images/promotions/promotion4.jpg" class="promotion_image"  alt="">
+			<p class="promotion_p">From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.</p>
+
+			
+			<input type="button" value="Посмотреть" class="promotion_button">
+		</section>
+
+			</td>
+		</tr>
+	</table>
+	<form class="closed_action">
+			<label class="cl_act">Для того чтобы получать наши <b>специальные закрытые акции</b>, нужно подписаться на нашу рассылку по почте! <br><input type="email" placeholder="Введите ваш E-mail" class="email_1"> <input type="submit" value="Отправить" class="submit"></label>
+	
+		</form>
+
+
+
+
+<!--подвал сайта (для всех одинаковый)-->
+<footer>
+	<div class="footer">
+		<br>
+		<nav>
+			<p class="footer_p">Навигация по сайту:</p>
+			<ul>
+				<li><a class="footer_a" href="">Home</a></li>
+				<li><a class="footer_a" href="">Login</a></li>
+				<li><a class="footer_a" href="">Sing up</a></li>
+				<li><a class="footer_a" href="">Contact</a></li>	
+				<li><a class="footer_a" href="">News</a></li>
+				<li><a class="footer_a" href="">Return</a></li>
+				<li><a class="footer_a" href="">Feedback</a></li>
+			</ul>
+		<p class="footer_p1">Наш номер телефона: 8 (800) 100-10-10</p>
+		</nav>
+	</div> 
+</footer>
+
+</body>
+</html>
